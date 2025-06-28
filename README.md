@@ -7,7 +7,7 @@ There are several options available to manage python environments. In this artic
 * `pyenv install --list` - shows the list of python versions that can be installed using `pyenv`
 * `pyenv versions` - shows the list of python versions installed using pyenv
 * `pyenv local 3.11.4` - sets the version of python to 3.11.4 to current directory and its sub directories
-* `pyenv shell 3.11.4` - sets the version of python to 3.11.4 in the current shell
+* `pyenv global 3.11.4` - sets the version of python to 3.11.4 at a global scope
 * `echo "3.11.4" > .python-version` - this is similar to `pyenv local 3.11.4`
 
 # pipenv
