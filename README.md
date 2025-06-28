@@ -9,6 +9,7 @@ There are several options available to manage python environments. In this artic
 * `pyenv local 3.11.4` - sets the version of python to 3.11.4 to current directory and its sub directories
 * `pyenv global 3.11.4` - sets the version of python to 3.11.4 at a global scope
 * `echo "3.11.4" > .python-version` - this is similar to `pyenv local 3.11.4`
+* `pyenv which python` - should show the full version of python used by `pyenv`
 
 # pipenv
 `pipenv` is a tool for managing Python project environments, which wraps around the package manager, pip, and the virtual environment tool, venv or virtualenv
