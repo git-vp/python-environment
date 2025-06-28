@@ -14,7 +14,7 @@ There are several options available to manage python environments. In this artic
 # pipenv
 `pipenv` is a tool for managing Python project environments, which wraps around the package manager, pip, and the virtual environment tool, venv or virtualenv
 * `pip install --user pipenv` - install `pipenv` using the version of python managed by `pyenv`
-* `pipenv --python /Users/username/.pyenv/versions/3.11.4/bin/python` - explicitly telling `pipenv` to use a specific version of python
+* `pipenv --python /Users/username/.pyenv/versions/3.11.4/bin/python` or `pipenv --python $(pyenv which python)` - explicitly telling `pipenv` to use a specific version of python managed by `pyenv`
 * `pipenv install matplotlib` - installs a python package using pipenv, it also creates Pipfile and Pipfile.lock in the directory this command is executed from
 * `pipenv --venv` - shows the virtual environment created using `pipenv`. This command should be executed from the same location where a Pipfile exists. Virtual environments managed by `pipenv` is created at `~/.local/share/virtualenvs/<name-of-virtual-env>`. Name of virtual environment is prefixed with the name of the folders this command is executed from.
 * `pipenv shell` - this will activate the virtual environment created by the above command
